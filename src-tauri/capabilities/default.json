@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Brugerfladen må kalde appens egne kommandoer og lytte efter hændelser",
+  "webviews": ["ui"],
+  "permissions": ["core:default"]
+}

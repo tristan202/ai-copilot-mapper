@@ -1,0 +1,14 @@
+{
+  "name": "ai-copilot-mapper-tauri",
+  "version": "2.0.0",
+  "private": true,
+  "description": "AI Copilot Mapper – Tauri version (WebView2)",
+  "scripts": {
+    "start": "tauri dev",
+    "build": "tauri build",
+    "test": "node renderer/hotkey.test.js"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  }
+}
