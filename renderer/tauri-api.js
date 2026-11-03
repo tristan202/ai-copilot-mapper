@@ -1,6 +1,6 @@
 /* global I18N, Hotkey */
 'use strict';
-// Samme window.api som Electron-udgavens preload.js, men via Tauri-kommandoer.
+// Tauri-kommandoerne samlet som window.api til renderer.js.
 // Alle kald giver { value } eller { error } tilbage; fejl fra Rust er tekstnøgler.
 (function () {
   const { invoke } = window.__TAURI__.core;

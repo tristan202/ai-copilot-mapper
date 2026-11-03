@@ -1,6 +1,6 @@
 // Lavniveau-tastaturhook i sin egen tråd. Fanger genvejen – også Copilot-tasten
 // (Win + Shift + F23), som Windows ikke lader programmer registrere på normal vis –
-// og sluger den. Samme logik som hook-worker.js i Electron-udgaven.
+// og sluger den.
 use std::sync::atomic::{AtomicBool, AtomicU32, Ordering::Relaxed};
 use std::sync::mpsc::Sender;
 use std::sync::{Mutex, OnceLock};

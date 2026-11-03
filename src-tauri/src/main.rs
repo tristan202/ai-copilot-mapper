@@ -1,5 +1,5 @@
-// AI Copilot Mapper – Tauri-udgaven. Samme brugerflade som Electron-udgaven, men
-// AI-siden vises i WebView2 (Microsoft Edge), som Google tillader login i.
+// AI Copilot Mapper. AI-siden vises i WebView2 (Microsoft Edge), som Google
+// tillader login i (det gør Googles login ikke i Electron).
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 mod hook;
 
@@ -173,7 +173,7 @@ fn update_tray(app: &AppHandle) -> tauri::Result<()> {
     Ok(())
 }
 
-// ---------- Kommandoer (samme navne som api i Electron-udgaven) ----------
+// ---------- Kommandoer (kaldes via window.api i tauri-api.js) ----------
 #[tauri::command]
 fn app_info(app: AppHandle) -> Value {
     info(&app)
