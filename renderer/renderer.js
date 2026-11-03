@@ -11,7 +11,7 @@ const hostOf = (url) => { try { return new URL(url).host; } catch { return url; 
 const hotkeyLabel = (acc) => Hotkey.label(acc, tr('CopilotKey'));
 
 const GITHUB = 'https://github.com/tristan202/AI-CoPilot-Mapper';
-const COLORS = { gemini: '#5b8def', chatgpt: '#10a37f', claude: '#d97757', copilot: '#2bb3a3', perplexity: '#20808d', deepseek: '#4d6bfe', kimi: '#9b6cf0' };
+const COLORS = { gemini: '#5b8def', chatgpt: '#10a37f', claude: '#d97757', copilot: '#2bb3a3', grok: '#4b5370', perplexity: '#20808d', deepseek: '#4d6bfe', kimi: '#9b6cf0' };
 
 function loadUi() { try { return JSON.parse(localStorage.getItem('aicm.ui')) || {}; } catch { return {}; } }
 const ui = { sidebar: true, ...loadUi() };

@@ -14,11 +14,12 @@ use tauri::{AppHandle, Emitter, LogicalPosition, LogicalSize, Manager, Url, Webv
 use tauri_plugin_autostart::ManagerExt;
 use tauri_plugin_opener::OpenerExt;
 
-const BUILTIN: [(&str, &str, &str); 7] = [
+const BUILTIN: [(&str, &str, &str); 8] = [
     ("gemini", "Gemini", "https://gemini.google.com/"),
     ("chatgpt", "ChatGPT", "https://chatgpt.com/"),
     ("claude", "Claude", "https://claude.ai/"),
     ("copilot", "Copilot", "https://copilot.microsoft.com/"),
+    ("grok", "Grok", "https://grok.com/"),
     ("perplexity", "Perplexity", "https://www.perplexity.ai/"),
     ("deepseek", "DeepSeek", "https://chat.deepseek.com/"),
     ("kimi", "Kimi", "https://www.kimi.com/"),
